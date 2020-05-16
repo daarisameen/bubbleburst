@@ -14,7 +14,21 @@
 
 <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
 
-
+<canvas id = "geeks" width = "200" height = "200"
+            style = "border:1px solid rgb(176, 17, 216)"> 
+        </canvas> 
+        <!-- canvas tag ends here -->
+          
+        <script> 
+            var c=document.getElementById("geeks"); 
+            var cx = c.getContext("2d"); 
+            var grd = cx.createRadialGradient(100,  
+                            100, 1, 100, 100, 100); 
+            grd.addColorStop(0, "red"); 
+            grd.addColorStop(1, "blue"); 
+            cx.fillStyle = grd; 
+            cx.fillRect(0, 0, 200, 200); 
+        </script>
 
 <div class="container-audio">
     <audio controls  loop autoplay>
